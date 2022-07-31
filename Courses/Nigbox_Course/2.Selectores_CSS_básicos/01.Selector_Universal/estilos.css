@@ -1,0 +1,24 @@
+*,
+:before,
+:after{
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.galeria:before{
+	content: '';
+	display: block;
+	width: 500px;
+	height: 100px;
+	padding: 20px;
+	background: rgb(74, 94, 130);
+}
+
+.galeria > *{
+	display: inline-block;
+	width: 200px;
+	height: 100px;
+	background: rgb(0, 19, 191);
+	padding-left: 20px;
+	padding-right: 20px;
+}

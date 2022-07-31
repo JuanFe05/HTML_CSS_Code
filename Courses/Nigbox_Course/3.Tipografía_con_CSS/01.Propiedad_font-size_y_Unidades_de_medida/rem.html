@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REM</title>
+
+    <style>
+
+        html{
+            font-size: 62.5%; /* body equivale a 62.5% = 10px */
+        }
+
+        body{
+            font-size: 2rem;
+        }
+
+        div{
+            font-size: 1rem; /* 1rem = 10px hereda del body*/
+        }
+
+        h1{
+            font-size: 2rem; /* 2rem = 20px ya que hereda de su contenedor sin multiplicar o sumar su propio valor */ 
+        }
+
+        p{
+            font-size: 1.5rem; /* 1.25rem = 15px */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Ejemplo</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, vel!
+        </p>
+    </div>
+    
+</body>
+</html>
