@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+    <!-- Metainformación -->
+    <!-- datos adicionales que aparecen en las páginas y documentos de Internet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- Título de la página -->
+    <!-- No más de 65 caracteres -->
+    <title>Funtamentos_HTML</title>
+
+    <!-- Descripción de la página, con esta etiqueta, puedes añadir una breve descripción de la página. -->
+    <!-- No agregar un descripción de más de 165 caracteres -->
+    <!-- SEO a nivel de código -->
+    <!-- En algunos casos, esta descripción se utiliza en el fragmento que se muestra en los resultados de búsqueda. -->
+    <meta name="description" content="Se está aprendiendo HTML">
+
+    <style>
+        h2{
+            color: chocolate;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+    Enlaces a páginas importantes
+    - https://www.w3.org/html/
+    - https://html.spec.whatwg.org/
+    - https://www.w3.org/blog/news/archives/7753
+    - https://developer.mozilla.org/es/docs/Web/HTML
+    - https://htmlreference.io/
+    - Caracteres especiales HTML https://desarrolloweb.com/articulos/11.php
+    -->
+
+    <!-- Encabezados -->
+    <!-- Encabezado de nivel más alto para la sección actual. -->
+    <!-- Solo debe de haber un h1 en toda la página -->
+    <h1>Fundamentos HTML - Solo puede exisitir uno por documento</h1>
+    
+    <hr>
+
+    <h2>Encabezados HTML</h2>
+    <h2>Título nivel 2</h2>
+    <h3>Título nivel 3</h3>
+    <h4>Título nivel 4</h4>
+    <h5>Título nivel 5</h5>
+    <!-- Fin encabezados -->
+
+    <hr>
+
+    <h2>Etiquetas de texto</h2>
+
+    <!-- Etiquetas de texto -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus enim rem commodi, reiciendis esse?</p>
+    <p>
+        palabras en: <b>negrita</b>, 
+        <i>itálica</i>, 
+        <u>subrayado</u>, 
+        e=mc<sup>2</sup>, 
+        H<sub>2</sub>O, 
+        <mark>marcatexto</mark>, 
+        <small>Letras pequeñas</small>
+    </p>
+
+    <p>
+        <strong>Texto importante</strong>,
+        <em>Texto con enfasis</em>,
+        <blockquote>El amor es algo increible</blockquote> Anónimo
+    </p>
+    <!-- Fin etiquetas de texto -->
+
+    <hr>
+
+    <h2>Saltos de linea</h2>
+
+    <!-- Saltos de linea -->
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et temporibus eligendi, possimus a velit voluptatem alias.
+        <br> 
+        itaque aspernatur aut necessitatibus dolorem soluta blanditiis ipsa dicta.
+    </p>
+
+    <hr> <!-- Define una ruptura semántica entre bloques de texto. -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, ullam.</p>
+    <!-- Fin saltos de linea -->
+
+    <hr>
+
+    <!-- Etiquetas de formteo -->
+    <h2>Etiquetas de formateo</h2>
+
+    <p>
+        <pre>
+            Tareas por hacer:
+            - HTML
+                - Hacer un repaso.
+                - Prepararse para la U.
+            - CSS
+                - Repasara diseño web responsivo.
+                - Mejorar en la maquetación de sitios web.
+        </pre>
+    </p>
+
+    <p>
+        <code>
+            Texto en formato de código
+        </code>
+    </p>
+
+    <p>
+        <pre>
+            <code>
+                import React from "react";
+                import Title from "./Title";
+
+                function App {
+                    return &lt; Title /&gt;
+                }
+            </code>
+        </pre>
+    </p>
+    <!-- Etiquetas de formteo -->
+
+    <hr>
+
+    <!-- Etiquetas semánnticas estructurales -->
+    <h2>Etiquetas semánnticas estructurales</h2>
+
+    <div>El div: es un contenedor sin significado semántico.</div>
+    <header>El header: es la cabecera de un sitio web</header>
+    <main>El main: define el contenido principal de una página web, solo puede exisiter un main por documento</main>
+    <footer>El footer: Define el pie de página de una página web o sección.</footer>
+    <nav>El nav: es una sección dedicada a los enlaces de navegación.</nav>
+    <article>
+        El article: es una sección del contenido de la página, como una publicación de blog o foro, que se puede
+        reutilizar de forma aislada.
+        Define un bloque de contenido autónomo que puede existir en cualquier contexto. Puede tener su propio
+        encabezado, pie de página, secciones... Útil para una lista de publicaciones de blog.
+    </article>
+    <aside>
+        El aside: representa el contenido que solo está indirectamente relacionado con el contenido principal, como una barra lateral.
+    </aside>
+    <section>
+        El section: Una sección que contiene elementos agrupados por tema, por ejemplo, un capítulo o un cuadro de
+        pestañas.
+    </section>
+    <address>
+        El address: representa una información de contacto.
+    </address>
+    <!-- Fin etiquetas semánnticas estructurales -->
+
+    <hr>
+
+    <!-- Inicio Etiquetas de Bloque VS Etiqutas de linea -->
+    <h2>Etiquetas de Bloque VS Etiqutas de linea</h2>
+
+    <div style="background-color: red; color: white;">
+        Etiqueta de bloque por exelencia es el div, además define un bloque genérico de contenido, que no tiene ningún
+        valor semántico. Se utiliza para elementos de diseño como contenedores.
+
+        <br>
+
+        Una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas.
+    </div>
+
+    <span style="background-color: green;">
+        Etiqueta de linea por excelentia es el span, además define un contenedor genérico de contenido en línea, que
+        no tiene ningún valor semántico.
+
+        <br>
+
+        Esta etiqueta solo ocuapa el espacio necesario que tiene su contenido.
+    </span>
+    <span>
+        Hola, soy otra span
+    </span>
+    <!-- Fin etiquetas de Bloque VS Etiqutas de linea  -->
+
+    <hr>
+
+    <!-- Importante siempre dejar los Scripts al final del documento HTML -->
+    <!-- Inicio Scripts en HTML -->
+    <h2>Scripts en HTML</h2>
+
+    <script>
+        console.log("Estamos aprendiendo HTML");
+    </script>
+
+    <script src="assets/codigos.js"></script>
+    <!-- Fin Scripts en HTML  -->
+    
+</body>
+</html>

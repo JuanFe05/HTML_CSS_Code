@@ -1,0 +1,1 @@
+console.log("Invocando código JS desde HTML")
