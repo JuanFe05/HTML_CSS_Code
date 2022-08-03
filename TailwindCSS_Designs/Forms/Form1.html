@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.17.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <title>Form1</title>
+</head>
+<body>
+    
+    <div class="w-screen h-screen flex justify-center items-center bg-gradient-to-br from-cyan-500 to-blue-500">
+
+        <form name="myForm" method="POST" class="p-10 bg-white rounded-xl drop-shadow-lg space-y-6">
+
+            <h1 class="mb-8 text-center font-extrabold text-3xl text-gray-800">
+                Registro de datos
+            </h1>
+
+            <div class="grid grid-cols-2 gap-2">
+                <div>
+                    <label for="usuario" class="block text-sm font-extrabold text-neutral-600"> 
+                        Usuario: 
+                    </label>
+                    <div class="mt-1">
+                        <input id="usuario" name="usuario" type="text" required placeholder="Tu Usuario"
+                            class="block w-full px-4 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform border rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-300">
+                    </div>
+                </div>
+                <div>
+                    <label for="password" class="block text-sm font-extrabold text-neutral-600"> Password: </label>
+                    <div class="mt-1">
+                        <input id="password" name="password" type="password" required placeholder="Tu Password"
+                            class="block w-full px-4 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transform border rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-300">
+                    </div>
+                </div>
+            </div>
+
+            <!-- espacio de los checkbox -->
+            <div>
+                <label for="usuario" class="block text-sm font-extrabold text-neutral-600"> 
+                    Tecnologías de Interés:
+                </label>
+            </div>
+
+            <div class="grid grid-cols-6 gap-6 lg:grid-cols-6">
+                <div class="flex items-center">
+                    <input id="java" name="java" type="checkbox"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="java" class="block ml-1 text-sm font-medium text-neutral-600"> Java </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="python" name="python" type="checkbox"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="python" class="block ml-1 text-sm font-medium text-neutral-600"> Python </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="php" name="php" type="checkbox"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="php" class="block ml-1 text-sm font-medium text-neutral-600"> PHP </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="ruby" name="ruby" type="checkbox"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="ruby" class="block ml-1 text-sm font-medium text-neutral-600"> Ruby </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="ruts" name="ruts" type="checkbox"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="ruts" class="block ml-1 text-sm font-medium text-neutral-600"> Rust </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="go" name="go" type="checkbox"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="go" class="block ml-1 text-sm font-medium text-neutral-600"> Golang </label>
+                </div>
+            </div>
+            <!-- fin espacio de los checkbox -->
+
+            <!-- espacio de los radio -->
+            <div>
+                <label for="usuario" class="block text-sm font-extrabold text-neutral-600"> Género: </label>
+            </div>
+
+            <div class="grid grid-cols-3 gap-3 lg:grid-cols-3">
+                <div class="flex items-center">
+                    <input id="masculino" name="masculino" type="radio"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="masculino" class="block ml-1 text-sm font-medium text-neutral-600"> Masculino </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="femenino" name="femenino" type="radio"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="femenino" class="block ml-1 text-sm font-medium text-neutral-600"> Femenino </label>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="otro" name="otro" type="radio"
+                        class="w-4 h-4 text-blue-600 border-gray-200 rounded focus:ring-blue-500">
+                    <label for="otro" class="block ml-1 text-sm font-medium text-neutral-600"> Otro </label>
+                </div>
+            </div>
+            <!-- Fin espacio de los radio -->
+
+            <!-- espacio de los select -->
+            <div class="grid grid-cols-2 gap-2 lg:grid-cols-2">
+                <div>
+                    <label for="musica_favorita" class="block text-sm font-extrabold text-neutral-600"> Música Favorita: </label>
+                    <div class="mt-1">
+                        <select class="block w-full px-4 py-3 text-base text-neutral-600 placeholder-gray-300 transition
+                            duration-500 ease-in-out transform border rounded-lg bg-gray-50 focus:outline-none
+                            focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2
+                            focus:ring-offset-blue-300">
+                            <option disabled selected>¿Cuál es tu música favorita?</option>
+                            <option>Rock</option>
+                            <option>Metal</option>
+                            <option>Pop</option>
+                            <option>Reggaeton</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="serie_favorita" class="block text-sm font-extrabold text-neutral-600"> Serie Favorita: </label>
+                    <div class="mt-1">
+                        <select class="block w-full px-4 py-3 text-base text-neutral-600 placeholder-gray-300 transition
+                            duration-500 ease-in-out transform border rounded-lg bg-gray-50 focus:outline-none
+                            focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2
+                            focus:ring-offset-blue-300">
+                            <option disabled selected>¿Cuál es la mejor serie de TV?</option>
+                            <option>Game of Thrones</option>
+                            <option>Lost</option>
+                            <option>Breaking Bad</option>
+                            <option>The Walking Dead</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- Fin espacio de los select -->
+
+            <!-- Textarea -->
+            <div>
+                <label for="comentarios" class="block text-sm font-extrabold text-neutral-600"> Comentarios: </label>
+                <div class="mt-1">
+                    <textarea name="" placeholder="Tu comentario..." style="resize: none"
+                        class="block w-full px-4 py-4 text-base text-neutral-600 placeholder-gray-300 transitionduration-500 ease-in-out transform border rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-300"></textarea>
+                </div>
+            </div>
+            <!-- fin Textarea -->
+
+            <!-- btn -->
+            <div class="grid grid-cols-2 gap-2">
+                <div>
+                    <div>
+                        <button type="reset"
+                            class="flex items-center justify-center w-full px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-red-600 rounded-xl hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">Limpiar</button>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button type="submit"
+                            class="flex items-center justify-center w-full px-10 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-xl hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            <!-- fin btn -->
+
+        </form>
+
+    </div>
+
+</body>
+</html>
