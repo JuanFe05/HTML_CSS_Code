@@ -1,0 +1,29 @@
+/*p{
+	color: red;
+}
+
+p{
+	color: blue;
+}*/
+
+/*.info{
+	font-family: cursive;
+	font-size: 25px;
+	color: red;
+}
+
+.info-contacto{
+	color: green;
+}
+
+.servivios{
+	color: green;
+}*/
+
+#info{
+	color: red;
+}
+
+.info{
+	color: green !important;
+}

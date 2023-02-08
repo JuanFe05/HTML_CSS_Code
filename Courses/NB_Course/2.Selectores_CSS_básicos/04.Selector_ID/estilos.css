@@ -1,0 +1,8 @@
+*, :before, :after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#titulo {
+	color: rgb(227, 134, 94);
+}
